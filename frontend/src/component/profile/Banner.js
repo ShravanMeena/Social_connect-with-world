@@ -183,7 +183,7 @@ class Banner extends Component {
           <div style={{ flex: 0.5, marginRight: 80 }}>
             <div style={{ border: "1px solid #bbb", borderRadius: 10 }}>
               <img
-                src={`http://127.0.0.1:5000/${user.picUrl}`}
+                src={`https://social0799.herokuapp.com/${user.picUrl}`}
                 alt={user.picUrl}
                 style={{ width: "100%", height: 300, objectFit: "contain" }}
               />

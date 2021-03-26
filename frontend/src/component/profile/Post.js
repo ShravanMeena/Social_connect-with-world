@@ -213,14 +213,14 @@ class Post extends Component {
                 cover={
                   <img
                     alt='example'
-                    src={`http://127.0.0.1:5000/${post.url}`}
+                    src={`https://social0799.herokuapp.com/${post.url}`}
                   />
                 }
                 className='singlePost'>
                 <Meta
                   avatar={
                     <Avatar
-                      src={`http://127.0.0.1:5000/${post.creator.picUrl}`}
+                      src={`https://social0799.herokuapp.com/${post.creator.picUrl}`}
                     />
                   }
                   title={
