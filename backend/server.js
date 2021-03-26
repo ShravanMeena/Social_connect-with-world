@@ -10,17 +10,17 @@ const postRoute = require("./routes/postRoute");
 const uploadRoutes = require("./routes/uploadRoutes");
 const path = require("path");
 
-// Config .env to
-if (process.env.NODE_ENV === "development") {
-  app.use(morgan("dev"));
-}
-dotenv.config();
-
 // connect to database
 connectDB();
 
 const app = express();
 app.use(express.json());
+
+// Config .env to
+if (process.env.NODE_ENV === "development") {
+  app.use(morgan("dev"));
+}
+dotenv.config();
 
 // Config bodyParser
 // app.use(bodyParser.json());
